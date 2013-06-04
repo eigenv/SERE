@@ -11,7 +11,28 @@ Here we present an implementation of SERE in R. The code can be downloaded from 
 # import sere.R file into R
 source('sere.R');
     
-# download the supplementary data from [2]
+# download the supplementary data from [2] into R workspace
+# [should take around a minute to download]
+dat <- read.table("http://genome.cshlp.org/content/suppl/2008/08/01/gr.079558.108.DC1/SupplementaryTable2.txt", 
+    header = T);
+
+# show first few lines of the supplementary data
+print(head(dat));
+
+# run SERE for comparing R1L1Kidney and R1L3Kidney coulmns
+# computed SERE score by R should be : 1.007704 
+sr1 <- sere.score(dat[, c('R1L1Kidney', 'R1L3Kidney')]);
+print(sr1);
+
+# run SERE for comparing R1L1Kidney, R1L3Kidney and R2L4Liver coulmns
+# computed SERE score by R should be : 1.249273 
+sr2 <- sere.score(dat[, c('R1L1Kidney', 'R1L3Kidney', 'R2L4Kidney')]);
+print(sr2);
+
+# make a dendrogram from pairwise computation of SERE score
+
+
+
    
 ```
 
