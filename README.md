@@ -5,7 +5,7 @@ SERE [Single-parameter quality control and sample comparison for RNA-Seq] is a s
 
 Example
 -----
-Here we present an implementation of SERE in R. The necessary code can be found  
+Here we present an implementation of SERE in R. The necessary code can be found in <a href="https://github.com/randomStat/SERE/blob/master/sere.R">sere.R</a>.
 
 References
 -----
