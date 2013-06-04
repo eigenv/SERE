@@ -30,10 +30,9 @@ sr2 <- sere.score(dat[, c('R1L1Kidney', 'R1L3Kidney', 'R2L4Kidney')]);
 print(sr2);
 
 # make a dendrogram from pairwise computation of SERE score
-
-
-
-   
+# ignore the first 7 columns of dat [they do not contain read counts]
+sere.dendro(dat[, 7 : 20]);
+  
 ```
 
 References
