@@ -1,3 +1,7 @@
+#
+# SERE [Single-parameter quality control and sample comparison for RNA-Seq]
+# 
+
 # SERE score 
 # obs.count : matrix/table of gene and sample level read counts
 # TH : minimum number of reads for a gene for exclusison
