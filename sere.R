@@ -1,6 +1,3 @@
-dat <- read.csv('~/Downloads/SupplementaryTable2.txt', sep = '\t');
-
-
 # SERE score 
 # obs.count : matrix/table of gene and sample level read counts
 # TH : minimum number of reads for a gene for exclusison
@@ -54,9 +51,11 @@ sere.dendro <- function(obs.count, TH = 1) {
 			dist.mat[j, i] <- sere.score(obs.count[, c(i, j)], TH);
 		}
 	}
-	print(dist.mat);
 	
 	# make the dedrogram
-	#hclust(dist.mat, method = 'ward');
-	return(dist.mat);
+	clust <- hclust(as.dist(dist.mat), method = "complete");
+	plot(clust);
+	
+	# done !
+	return(clust);
 }
