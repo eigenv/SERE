@@ -7,6 +7,12 @@ Example
 -----
 Here we present an implementation of SERE in R. The code can be downloaded from <a id=" ">???link to source???</a>. As an example we run it on the supplementary data <a href="http://genome.cshlp.org/content/suppl/2008/08/01/gr.079558.108.DC1/SupplementaryTable2.txt">SupplementaryTable2.txt</a> provided in [[2]](#ref_2).
 
+    # source sere.R file into R
+    source('sere.R');
+    
+    # 
+
+
 References
 -----
 [1] <a id="ref_1" href="http://www.biomedcentral.com/1471-2164/13/524"> Schulze, S. K., Kanwar, R., Gölzenleuchter, M., Therneau, T. M., & Beutler, A. S. (2012). SERE: single-parameter quality control and sample comparison for RNA-Seq. *BMC genomics, 13*(1), 524. doi:10.1186/1471-2164-13-524 </a>
