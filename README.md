@@ -7,11 +7,13 @@ Example
 -----
 Here we present an implementation of SERE in R. The code can be downloaded from <a id=" ">???link to source???</a>. As an example we run it on the supplementary data <a href="http://genome.cshlp.org/content/suppl/2008/08/01/gr.079558.108.DC1/SupplementaryTable2.txt">SupplementaryTable2.txt</a> provided in [[2]](#ref_2).
 
-    # source sere.R file into R
-    source('sere.R');
+```r
+# import sere.R file into R
+source('sere.R');
     
-    # 
-
+# download the supplementary data from [2]
+   
+```
 
 References
 -----
