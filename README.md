@@ -24,7 +24,7 @@ print(head(dat));
 sr1 <- sere.score(dat[, c('R1L1Kidney', 'R1L3Kidney')]);
 print(sr1);
 
-# run SERE for comparing R1L1Kidney, R1L3Kidney and R2L4Liver coulmns
+# run SERE for comparing R1L1Kidney, R1L3Kidney and R2L4Kidney coulmns
 # computed SERE score by R should be : 1.249273 
 sr2 <- sere.score(dat[, c('R1L1Kidney', 'R1L3Kidney', 'R2L4Kidney')]);
 print(sr2);
