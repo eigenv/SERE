@@ -32,8 +32,11 @@ print(sr2);
 # make a dendrogram from pairwise computation of SERE score
 # ignore the first 7 columns of dat [they do not contain read counts]
 sere.dendro(dat[, 7 : 20]);
-  
+
+
 ```
+
+![](https://github.com/randomStat/SERE/blob/master/example/dendro.png?raw=true)
 
 References
 -----
