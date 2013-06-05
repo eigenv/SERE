@@ -5,7 +5,7 @@ SERE [Single-parameter quality control and sample comparison for RNA-Seq] is a s
 
 Example
 -----
-Here we present an implementation of SERE in R. The code can be downloaded from <a href="https://github.com/randomStat/SERE/archive/master.zip">Download</a>. As an example we run it on the supplementary data <a href="http://genome.cshlp.org/content/suppl/2008/08/01/gr.079558.108.DC1/SupplementaryTable2.txt">SupplementaryTable2.txt</a> provided in [[2]](#ref_2).
+Here we present an implementation of SERE in R. The code can be downloaded from <a href="https://github.com/randomStat/SERE/archive/master.zip">Download</a>. As an example we run it on the supplementary data <a href="http://genome.cshlp.org/content/suppl/2008/08/01/gr.079558.108.DC1/SupplementaryTable2.txt">SupplementaryTable2.txt</a> provided in [[2]](#ref_2). Columns 7 to 20 of the data table corresponds to separate samples and each row corresponds to a unique gene. The table cell contains the number of reads in a particular sample overlapping a particular gene. Such a table can be made using the <a href="http://www-huber.embl.de/users/anders/HTSeq/doc/count.html">htseq-count</a> command from the HTSeq package. 
 
 ```r
 # import sere.R file into R
