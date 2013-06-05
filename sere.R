@@ -3,7 +3,7 @@
 # 
 
 # SERE score 
-# obs.count : matrix/table of gene and sample level read counts
+# obs.count : table of gene and sample level read counts
 # TH : minimum number of reads for a gene for exclusison
 sere.score <- function(obs.count, TH = 1) {
   # number of samples
@@ -36,21 +36,22 @@ sere.score <- function(obs.count, TH = 1) {
 
 
 # SERE dendrogram
-# obs.count : matrix/table of gene and sample level read counts
+# obs.count : table of gene and sample level read counts
 # TH : minimum number of reads for a gene for exclusison
 sere.dendro <- function(obs.count, TH = 1) {
 	# number of samples
 	num.samp <- ncol(obs.count);
+	col.names <- names(obs.count);
 	
 	# distance matrix
 	dist.mat <- matrix(NA, nrow = num.samp, ncol = num.samp);
-	rownames(dist.mat) <- names(obs.count);
-	colnames(dist.mat) <- names(obs.count);	
+	rownames(dist.mat) <- col.names;
+	colnames(dist.mat) <- col.names;	
 	
 	# fill the distance matrix
 	for(i in seq(num.samp)) {
 		for(j in i : num.samp) {
-			print(c(i, j));
+			print(paste('Computing SERE score for : ', col.names[i], col.names[j]));
 			dist.mat[i, j] <- sere.score(obs.count[, c(i, j)], TH);
 			dist.mat[j, i] <- sere.score(obs.count[, c(i, j)], TH);
 		}
