@@ -36,7 +36,7 @@ sere.dendro(dat[, 7 : 20]);
 
 ```
 
-![](https://github.com/randomStat/SERE/blob/master/example/dendro.png?raw=true)
+<p><img src="https://github.com/randomStat/SERE/blob/master/example/dendro.png?raw=true" height="300px" width="350px" /></p>
 
 References
 -----
