@@ -40,7 +40,7 @@ sere.dendro(dat[, 7 : 20]);
 
 Contact
 -----
-For requests/comments please email to :  rahul.kanwar [@] gmail.com
+For requests/comments please email to:  rahul.kanwar [@] gmail.com
 
 References
 -----
