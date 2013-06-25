@@ -38,6 +38,10 @@ sere.dendro(dat[, 7 : 20]);
 
 <p><img src="https://github.com/randomStat/SERE/blob/master/example/dendro.png?raw=true" height="300px" width="350px" /></p>
 
+Contact
+-----
+For requests/comments please email to :  rahul.kanwar [@] gmail.com
+
 References
 -----
 [1] <a id="ref_1" href="http://www.biomedcentral.com/1471-2164/13/524"> Schulze, S. K., Kanwar, R., Gölzenleuchter, M., Therneau, T. M., & Beutler, A. S. (2012). SERE: single-parameter quality control and sample comparison for RNA-Seq. *BMC genomics, 13*(1), 524. doi:10.1186/1471-2164-13-524 </a>
